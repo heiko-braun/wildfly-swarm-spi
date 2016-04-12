@@ -15,6 +15,8 @@
  */
 package org.wildfly.swarm.spi.api;
 
+import java.util.Optional;
+
 /**
  * @author Bob McWhirter
  */
@@ -37,6 +39,8 @@ public interface Fraction {
         boolean hasFraction(String simpleName);
 
         Fraction fraction(String simpleName);
+
+        Optional<ProjectStage> projectStage();
     }
 
     default String simpleName() {
