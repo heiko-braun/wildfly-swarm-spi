@@ -32,8 +32,6 @@ public interface Fraction {
         void outboundSocketBinding(OutboundSocketBinding binding);
 
         void outboundSocketBinding(String groupName, OutboundSocketBinding binding);
-
-        Optional<StageConfig> projectStage();
     }
 
     interface PostInitContext extends InitContext {
@@ -42,6 +40,7 @@ public interface Fraction {
 
         Fraction fraction(String simpleName);
 
+        Optional<StageConfig> projectStage();
     }
 
     default String simpleName() {
