@@ -40,7 +40,7 @@ public interface Fraction {
 
         Fraction fraction(String simpleName);
 
-        Optional<ProjectStage> projectStage();
+        Optional<StageConfig> projectStage();
     }
 
     default String simpleName() {
